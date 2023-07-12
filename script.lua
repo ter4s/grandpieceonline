@@ -12,3 +12,24 @@ elseif placeId == 11468034852 then -- MUGEN
 else --ouwi
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ter4s/grandpieceonline/main/Protected_7178450311501662.lua"))()
 end
+
+local request = http_request or request or HttpPost or syn.request or syn.request or fluxus.request or http.request
+if request then
+    request(
+        {
+            Url = "http://127.0.0.1:6463/rpc?v=1",
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json",
+                ["Origin"] = "https://discord.com"
+            },
+            Body = game:GetService("HttpService"):JSONEncode(
+                {
+                    cmd = "INVITE_BROWSER",
+                    args = {code = "pAet8FmKB3"},
+                    nonce = game:GetService("HttpService"):GenerateGUID(false)
+                }
+            )
+        }
+    )
+end
