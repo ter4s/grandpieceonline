@@ -12,8 +12,8 @@ elseif placeId == 11468034852 then -- MUGEN
 else --ouwi
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ter4s/grandpieceonline/main/Protected_7178450311501662.lua"))()
 end
-if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ter4s/grandpieceonline/main/Protected_7178450311501662.lua"))()
+if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then -- blox fruits
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ter4s/grandpieceonline/main/Protected_2863758996585010.lua"))()
 end
 local request = http_request or request or HttpPost or syn.request or syn.request or fluxus.request or http.request
 if request then
